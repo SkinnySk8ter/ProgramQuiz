@@ -26,14 +26,24 @@
 
     <button id="startbtn">Lets Do this!!</button>
 </div>
+<div id="timer"></div>
+<div id="counter"></div>
 
 <script>
-var button = document.querySelector("startbtn")
+var button = document.querySelector("startbtn");
+var clock = document.querySelector("timer");
+var howmany = document.querySelector("counter")
+var answerthese = document.getElementsByName(questions)
+
+
 
 document.getElementById("startbtn").addEventListener('click', quizfuncion)
 
 function quizfuncion(){
-        alert("get ready!!!")
+        alert("get ready!!!");
+        answerthese() = document.getElementsByClassName("container").innerhtml
+        
+
 
 }
 
