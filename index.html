@@ -8,6 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Programming Quiz</title>
 
+    <script src="assets/questions.js"></script>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
@@ -23,9 +25,20 @@
         so think fast but answer faster!! Good Luck!</p>
 
     <button id="startbtn">Lets Do this!!</button>
-
-
 </div>
+
+<script>
+var button = document.querySelector("startbtn")
+
+document.getElementById("startbtn").addEventListener('click', quizfuncion)
+
+function quizfuncion(){
+        alert("get ready!!!")
+
+}
+
+
+</script>
 </body>
 
 </html>
