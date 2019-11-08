@@ -26,29 +26,49 @@
 
     <button id="startbtn">Lets Do this!!</button>
 </div>
-<div id="timer"></div>
-<div id="counter"></div>
-
-<script>
-var button = document.querySelector("startbtn");
-var clock = document.querySelector("timer");
-var howmany = document.querySelector("counter")
-var answerthese = document.getElementsByName(questions)
 
 
+    <div id="timer"></div>
+    <div id="counter"></div>
 
-document.getElementById("startbtn").addEventListener('click', quizfuncion)
+    <div class="quizcontainer">
+
+        <p2 class="p2"> </p2> 
+
+
+
+    </div>    
+
+    <script>
+    var button = document.querySelector("startbtn");
+    var clock = document.querySelector("timer");
+    var howmany = document.querySelector("counter")
+    var actualquiz = document.getElementsByName("questions")
+    var randomValue = questions[Math.floor(questions.length * Math.random())];
+    
+
+
+
+
+    document.getElementById("startbtn").addEventListener('click', quizfuncion)
 
 function quizfuncion(){
         alert("get ready!!!");
-        answerthese() = document.getElementsByClassName("container").innerhtml
-        
 
+};
+
+function thequiz(){
+randomValue();
 
 }
 
+    
+
+
+
 
 </script>
+
 </body>
 
 </html>
