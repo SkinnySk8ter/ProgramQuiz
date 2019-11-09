@@ -33,6 +33,7 @@ var questions = [
     var clock = document.querySelector("timer");
     var howmany = document.querySelector("counter")
     var actualquiz = document.getElementsByName("questions")
+    
 
     
    
@@ -45,10 +46,7 @@ var questions = [
     
 
     //document.getElementById("startbtn").addEventListener("click", quizfunction);
-
-    
-  // Create the array and fill it with data.
-  // Define a loop to access each array element
+ // Define a loop to access each array element
   // and display it onscreen.
 //   for (i = 0; i < questions.length; i++)
 //   {
@@ -57,6 +55,9 @@ var questions = [
 //       questions[i] + "<br />");
 //   }
 
+    
+  // Create the array and fill it with data.
+ 
 
 
 
