@@ -99,6 +99,18 @@ function sendMessage() {
 
 setTime();
 
+function quiztime() {
+    
+    for (i = 0; i < questions.length; i++)
+      {
+        document.write(
+          "Questions " + i + " = " +
+          questions[i] + "<br />");
+      }
+
+
+}
+
 
 
 
@@ -122,7 +134,10 @@ setTime();
 
 // }
 
-
+//this function is showing the final results after the user has taken the quiz....need to change the variables.(edited-variables should work)
+// function showFinalResults() {
+//   openpopup();
+//  document.getElementById("demo").innerHTML = resultstable + " out of " + questions.length + " questions, " + Math.round(resultstable / questions.length * 100) + "%";
 
 
 
