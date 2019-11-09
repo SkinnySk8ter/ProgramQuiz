@@ -14,61 +14,39 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-<body>
-<div class="container">
-
-    <H1 style="font-style: italic;">Programming Quiz!</H1>
-
-
-    <p>Get ready for a quiz to test your knowledge on programming! After clicking on the button to get started you will
-        be presented with a set of 5 questions to answer. Pay attention though! There is a timer that is counting down
-        so think fast but answer faster!! Good Luck!</p>
-
-    <button id="startbtn">Lets Do this!!</button>
-</div>
-
-
-    <div id="timer"></div>
-    <div id="counter"></div>
-
-    <div class="quizcontainer">
-
-        <p2 class="p2"> </p2> 
-
-
-
-    </div>    
-
-    <script>
-    var button = document.querySelector("startbtn");
-    var clock = document.querySelector("timer");
-    var howmany = document.querySelector("counter")
-    var actualquiz = document.getElementsByName("questions")
-    var randomValue = questions[Math.floor(questions.length * Math.random())];
-    
-
-
-
-
-    document.getElementById("startbtn").addEventListener('click', quizfuncion)
-
-function quizfuncion(){
-        alert("get ready!!!");
-
-};
-
-function thequiz(){
-randomValue();
-
-}
-
-    
-
-
-
-
-</script>
-
-</body>
+<style>
+        .hidden{
+            display:none;
+        }
+        
+        .unhidden{
+            display:block;
+        }
+        </style>
+        <script type="text/javascript">
+        function unhide(clickedButton, divID) {
+        var item = document.getElementById(divID);
+        if (item) {
+            if(item.className=='hidden'){
+                item.className = 'unhidden' ;
+                clickedButton.value = 'hide'
+            }else{
+                item.className = 'hidden';
+                clickedButton.value = 'unhide'
+            }
+        }}
+        
+        </script>
+        
+        <body>
+            <h1 style="align-content: center;"> Programming Quiz!!!</h1>
+        <div id="about" class="hidden">
+        <div class="content3">
+        <p>This is the about section.</p>
+        <p>It is currently still being worked on.</p>
+        </div>
+        </div>
+        <input type="button" onclick="unhide(this, 'about') " value="unhide">
+        </body>
 
 </html>
