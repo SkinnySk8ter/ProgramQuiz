@@ -35,12 +35,7 @@ var questions = [
     var actualquiz = document.getElementsByName("questions")
 
     
-    function quizrun() {
-        document.getElementById("startbtn").addEventListener("click", quizrun)
-
-        alert("You have 75 seconds to answer these questions! Get an answer wrong and watch the clock move faster than the Flash!")
-    }
-    
+   
 
 
 
@@ -66,18 +61,6 @@ var questions = [
 
 
 
-
-
-//     function quizfunction(){
-//     alert("get ready!!!");
-//     function quizrun(quizfunction) {
-
-//         return quizfunction;
-    
-// }
-
-
-// };    
 
 
 
