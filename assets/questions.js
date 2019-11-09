@@ -29,4 +29,53 @@ var questions = [
         answer: ".length"
     }]
 
+    var button = document.getElementById("startbtn");
+    var clock = document.querySelector("timer");
+    var howmany = document.querySelector("counter")
+    var actualquiz = document.getElementsByName("questions")
+
+
+    
+
+    //document.getElementById("startbtn").addEventListener("click", quizfunction);
+
+    
+  // Create the array and fill it with data.
+  // Define a loop to access each array element
+  // and display it onscreen.
+//   for (i = 0; i < questions.length; i++)
+//   {
+//     document.write(
+//       "Questions " + i + " = " +
+//       questions[i] + "<br />");
+//   }
+
+
+
+
+
+
+
+//     function quizfunction(){
+//     alert("get ready!!!");
+//     function quizrun(quizfunction) {
+
+//         return quizfunction;
+    
+// }
+
+
+// };    
+
+
+
+// function runQuiz(){
+// for (var i = 0; index < questions.length; i++) {
+//         var element = questions[i];}
+        
+
+
+// }
+
+
    
