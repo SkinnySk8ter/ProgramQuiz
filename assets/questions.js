@@ -1,8 +1,8 @@
-var questions = [
+var questions = [ // loop here for all the questions
     {
       title: "Commonly used data types DO NOT include:",
-      choices: ["strings", "booleans", "alerts", "numbers"],
-      answer: "alerts"
+      choices: ["strings", "booleans", "alerts", "numbers"], // create element for each one of the choices (create listener)
+      answer: "alerts" // user clicks button, check to see if it matches answer (hint: use event.target in your listener)
     },
     {
       title: "The condition in an if / else statement is enclosed within ____.",
@@ -33,45 +33,29 @@ var questions = [
     var clock = document.querySelector("timer");
     var howmany = document.querySelector("counter")
     var actualquiz = document.getElementsByName("questions")
+
+  
+function quiztime() {
     
-
+    for (var i = 0; i < questions.length; i++){
+        var question = questions[i];
     
-   
+        console.log(questions[i].title++);
+        console.log(questions[i].choices);
+    };
+}
+
+    //   show question
+ function runQuiz(){     
+      document.getElementById('actualquiz').innerHTML = questions[i];
+      var element = document.getElementById("questions");
+      element.innerHTML = quiz.getQuestionIndex().text;
+      runQuiz();
+
+    //     for(var j = 0; j < choices.length; j++){
+
+    //     var choice = choices[j];
+    //     console.log(choices);
 
 
-
-    
-
-
-    
-
-    //document.getElementById("startbtn").addEventListener("click", quizfunction);
- // Define a loop to access each array element
-  // and display it onscreen.
-//   for (i = 0; i < questions.length; i++)
-//   {
-//     document.write(
-//       "Questions " + i + " = " +
-//       questions[i] + "<br />");
-//   }
-
-    
-  // Create the array and fill it with data.
- 
-
-
-
-
-
-
-
-// function runQuiz(){
-// for (var i = 0; index < questions.length; i++) {
-//         var element = questions[i];}
-        
-
-
-// }
-
-
-   
+    }
