@@ -7,15 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Programming Quiz</title>
+   
 
-    <script src="assets/questions.js"></script>
+   
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-
+        
     <div class="container">
 
 
@@ -37,13 +38,27 @@
    
 
     <div class="quizcontainer">
+        <br>
+        <br>
+        <br>
+        <br>
+
 
 
             <div id="timer"></div>
             <div id="actualquiz"></div>
             <div id="counter"></div>
             <div id="resultsTable"></div>
-
+            <br>
+            <br>
+            <br>
+            <div class="lebuttons">
+                <button id="choice">A Choice</button>
+                <button id="choice">B Choice</button>
+                <button id="choice">C Choice</button>
+                <button id="choice">D Choice</button>
+            </div>
+            
         <p2 class="p2"> </p2>
 
 
@@ -51,12 +66,14 @@
 
 
     </div>
+    <script src="assets/questions.js"></script>
+
 
     <script>
         var button = document.querySelector("startbtn");
 
         var howmany = document.querySelector(".counter")
-        var actualquiz = document.getElementsByName(".questions")
+        var realquiz = document.getElementsByName(".questions")
         var results = document.querySelector("resultsTable")
 
 
@@ -94,21 +111,8 @@ function setTime() {
 }
 setTime();
 function sendMessage() {
-  timeEl.textContent = " ";
-}
-
-setTime();
-
-function quiztime() {
-    
-    for (i = 0; i < questions.length; i++)
-      {
-        document.write(
-          "Questions " + i + " = " +
-          questions[i] + "<br />");
-      }
-
-
+    alert("TIMES UP!!")
+  timeEl.textContent = "Times UP!! ";
 }
 
 
@@ -116,11 +120,7 @@ function quiztime() {
 
 
 
-//     document.getElementById("startbtn").addEventListener('click', quizfunction)
 
-//     function quizfunction(){
-//         alert("get ready!!!");
-// }
 
 
 
