@@ -1,4 +1,4 @@
-var questions = [ // loop here for all the questions
+var questions = [ // loop here for all the questions --line 40
     {
       title: "Commonly used data types DO NOT include:",
       choices: ["strings", "booleans", "alerts", "numbers"], // create element for each one of the choices (create listener)
@@ -35,22 +35,67 @@ var questions = [ // loop here for all the questions
     var actualquiz = document.getElementsByName("questions")
 
   
-function quiztime() {
+function quizsetup() {
     
     for (var i = 0; i < questions.length; i++){
         var question = questions[i];
     
         console.log(questions[i].title++);
         console.log(questions[i].choices);
+        quizsetup();
     };
 }
 
-    //   show question
- function runQuiz(){     
-      document.getElementById('actualquiz').innerHTML = questions[i];
-      var element = document.getElementById("questions");
-      element.innerHTML = quiz.getQuestionIndex().text;
-      runQuiz();
+var actualquiz = document.getElementById("thequiz");
+
+// everything from here was taken from a different webpage to understand the core concept. main question of how to pull from an array to appear on html dom still isnt working.
+
+
+// function lequiz(){
+
+// for ( var i = 0 ; i < questions.length; i++){
+//  populateQuestion(i);
+//  i++;
+
+// };
+// lequiz();
+// function populateQuestion(qNum) {
+//     var individualQuestion = allQuestions[i];
+//     questionTitle.innerText = individualQuestion.question;
+
+//     selectionList.innerHTML = ""; //reset choices list
+//     for(key in individualQuestion.choices){
+//         var radioBtnName = "question"+i+"_choice";
+//         var choiceText = individualQuestion.choices[key];
+//         selectionList.appendChild(createLi(radioBtnName,choiceText));
+//     }
+// }
+// function createLi(name, choiceText) {
+//         var e = document.createElement('li');
+//         var radioHtml = '<input type="radio" name="' + name + '"';    
+//         radioHtml += '/>';
+//         radioHtml += choiceText;        
+//         e.innerHTML = radioHtml;        
+//         return e;
+//     }
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //   document.getElementById('actualquiz').innerHTML = questions[i];
+    //   var element = document.getElementById("questions");
+    //   element.innerHTML = quiz.getQuestionIndex().text;
+    //   runQuiz();
 
     //     for(var j = 0; j < choices.length; j++){
 
@@ -58,4 +103,4 @@ function quiztime() {
     //     console.log(choices);
 
 
-    }
+    
