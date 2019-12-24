@@ -24,7 +24,7 @@ var questions = [ // loop here for all the questions --line 40
     },
 
     {
-        title: "How can you access every part of an array?",
+        title: "How can you access the length of an array?",
         choices: [".everything", ".allaccess", ".length", ".all"],
         answer: ".length"
     }]
@@ -34,17 +34,27 @@ var questions = [ // loop here for all the questions --line 40
     var howmany = document.querySelector("counter")
     var actualquiz = document.getElementsByName("questions")
 
+    
+    function quizstart() {
+
+      alert("Welcome to a quiz! (ta-da!!) You will be tasked with answering the next set of questions to the best of your ability but keep an eye on the time! Answer incorrectly and the timer goes down even faster!! Click Ok to get started!")
+  }
+  quizstart();
+
   
 function quizsetup() {
     
-    for (var i = 0; i < questions.length; i++){
-        var question = questions[i];
+    for (var i = 0; i < questions.title; i++){
+        var question = questions.title[i];
     
         console.log(questions[i].title++);
-        console.log(questions[i].choices);
-        quizsetup();
+        console.log(questions[i].choices++);
+        let el = document.getElementById("questionPromptOne");
+        el.innerHTML =  Math.floor(Math.random()*questions[i]);
+        
     };
 }
+quizsetup();
 
 var actualquiz = document.getElementById("thequiz");
 
