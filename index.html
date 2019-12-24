@@ -71,11 +71,11 @@
 
 
     <script>
-        var button = document.querySelector("startbtn");
+        let button = document.querySelector("startbtn");
 
-        var howmany = document.querySelector(".counter")
-        var realquiz = document.getElementById(".questions")
-        var results = document.querySelector("resultsTable")
+        let howmany = document.querySelector(".counter")
+        let realquiz = document.getElementById(".questions")
+        let results = document.querySelector("resultsTable")
 
 
         function quizstart() {
@@ -95,11 +95,11 @@
         
 
     var timeEl = document.querySelector("timer");
-var mainEl = document.getElementById("main");    
-var secondsLeft = 75;
+let mainEl = document.getElementById("main");    
+let secondsLeft = 75;
 
 function setTime() {
-  var timerInterval = setInterval(function() {
+  let timerInterval = setInterval(function() {
     secondsLeft--;
     document.getElementById("timer").innerHTML = secondsLeft + " seconds left till GAME OVER";
 
@@ -113,27 +113,71 @@ function setTime() {
 setTime();
 function sendMessage() {
     alert("TIMES UP!!")
-  timeEl.textContent = "Times UP!! ";
+//   timeEl.textContent = "Times UP!! ";
 }
 
 
+function buildQuiz(){
+  // we'll need a place to store the HTML output
+  const output = [];
 
+  // for each question...
+//   myQuestions.forEach(
+//     (currentQuestion, questionNumber) => {
 
+//       // we'll want to store the list of answer choices
+//       const answers = [];
 
+//       // and for each available answer...
+//       for(letter in currentQuestion.answers){
 
+//         // ...add an HTML radio button
+//         answers.push(
+//           `<label>
+//             <input type="radio" name="question${questionNumber}" value="${letter}">
+//             ${letter} :
+//             ${currentQuestion.answers[letter]}
+//           </label>`
+//         );
+//       }
 
+//       // add this question and its answers to the output
+//       output.push(
+//         `<div class="question"> ${currentQuestion.question} </div>
+//         <div class="answers"> ${answers.join('')} </div>`
+//       );
+//     }
+//   );
 
-
-
+//   // finally combine our output list into one string of HTML and put it on the page
+//   quizContainer.innerHTML = output.join('');
+// }
 
 
 // function runQuiz(){
 //     for (var i = 0; index < questions.length; i++) {
 //             var element = questions[i];
+//     }
+    
 
 
 
-// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //this function is showing the final results after the user has taken the quiz....need to change the variables.(edited-variables should work)
 // function showFinalResults() {
