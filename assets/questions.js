@@ -29,6 +29,12 @@ var questions = [ // loop here for all the questions --line 40
         answer: ".length"
     }]
 
+    let el = document.getElementById("questionPromptOne");
+    let eltwo = document.getElementById("questionPromptTwo");
+    let elthree = document.getElementById("questionPromptThree");
+    let elfour = document.getElementById("questionPromptFour");
+    let elfive = document.getElementById("questionPromptFive");
+    
     var button = document.getElementById("startbtn");
     var clock = document.querySelector("timer");
     var howmany = document.querySelector("counter")
@@ -41,20 +47,104 @@ var questions = [ // loop here for all the questions --line 40
   }
   quizstart();
 
+  //bit of repeated code coming up but it works for now!!!!
+
   
-function quizsetup() {
-    
-    for (var i = 0; i < questions.title; i++){
-        var question = questions.title[i];
-    
-        console.log(questions[i].title++);
-        console.log(questions[i].choices++);
-        let el = document.getElementById("questionPromptOne");
-        el.innerHTML =  Math.floor(Math.random()*questions[i]);
+function questOne() {
         
-    };
-}
-quizsetup();
+        el.innerHTML = questions[0].title;
+        let abtn = document.getElementById("AAnswer");
+        let bbtn = document.getElementById("BAnswer");
+        let Cbtn = document.getElementById("CAnswer");
+        let Dbtn = document.getElementById("DAnswer");
+
+        abtn.innerHTML = questions[0].choices[0];
+        bbtn.innerHTML = questions[0].choices[1];
+        Cbtn.innerHTML = questions[0].choices[2];
+        Dbtn.innerHTML = questions[0].choices[3];
+        
+      };
+      questOne();
+
+      function questTwo() {
+        eltwo.innerHTML = questions[1].title;
+        let abtn = document.getElementById("AAnswer2");
+        let bbtn = document.getElementById("BAnswer2");
+        let Cbtn = document.getElementById("CAnswer2");
+        let Dbtn = document.getElementById("DAnswer2");
+
+        abtn.innerHTML = questions[1].choices[0];
+        bbtn.innerHTML = questions[1].choices[1];
+        Cbtn.innerHTML = questions[1].choices[2];
+        Dbtn.innerHTML = questions[1].choices[3];
+
+
+      }
+      questTwo();
+
+      function questThree() {
+        elthree.innerHTML = questions[2].title;
+        let abtn = document.getElementById("AAnswer3");
+        let bbtn = document.getElementById("BAnswer3");
+        let Cbtn = document.getElementById("CAnswer3");
+        let Dbtn = document.getElementById("DAnswer3");
+
+        abtn.innerHTML = questions[2].choices[0];
+        bbtn.innerHTML = questions[2].choices[1];
+        Cbtn.innerHTML = questions[2].choices[2];
+        Dbtn.innerHTML = questions[2].choices[3];
+
+
+      }
+      questThree();
+
+
+      function questFour() {
+        elfour.innerHTML = questions[3].title;
+        let abtn = document.getElementById("AAnswer4");
+        let bbtn = document.getElementById("BAnswer4");
+        let Cbtn = document.getElementById("CAnswer4");
+        let Dbtn = document.getElementById("DAnswer4");
+
+        abtn.innerHTML = questions[3].choices[0];
+        bbtn.innerHTML = questions[3].choices[1];
+        Cbtn.innerHTML = questions[3].choices[2];
+        Dbtn.innerHTML = questions[3].choices[3];
+
+
+      }
+      questFour();
+
+      function questfive() {
+        elfive.innerHTML = questions[4].title;
+        let abtn = document.getElementById("AAnswer5");
+        let bbtn = document.getElementById("BAnswer5");
+        let Cbtn = document.getElementById("CAnswer5");
+        let Dbtn = document.getElementById("DAnswer5");
+
+        abtn.innerHTML = questions[4].choices[0];
+        bbtn.innerHTML = questions[4].choices[1];
+        Cbtn.innerHTML = questions[4].choices[2];
+        Dbtn.innerHTML = questions[4].choices[3];
+
+
+      }
+      questfive();
+
+
+
+
+
+
+
+        
+        
+        
+        
+
+
+        
+
 
 var actualquiz = document.getElementById("thequiz");
 
