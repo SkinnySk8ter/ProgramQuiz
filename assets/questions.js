@@ -131,6 +131,32 @@ function questOne() {
       }
       questfive();
 
+      let timeEl = document.querySelector("timer");
+      let mainEl = document.getElementById("main");    
+      let secondsLeft = 75;
+      
+      function setTime() {
+        let timerInterval = setInterval(function() {
+          secondsLeft--;
+          document.getElementById("timer").innerHTML = secondsLeft + " seconds left till GAME OVER";
+      
+          if(secondsLeft === 0) {
+            clearInterval(timerInterval);
+            sendMessage();
+          }
+      
+        }, 1500);
+      }
+      setTime();
+      function sendMessage() {
+          alert("TIMES UP!!")
+      }      
+
+      //this function is showing the final results after the user has taken the quiz....need to change the variables.(edited-variables should work)
+// function showFinalResults() {
+//   openpopup();
+//  document.getElementById("container").innerHTML = resultstable + " out of " + questions.length + " questions, " + Math.round(resultstable / questions.length * 100) + "%";
+
 
 
 
